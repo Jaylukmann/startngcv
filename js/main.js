@@ -1,7 +1,7 @@
 // ========================= Theme shift ========================
 var d = new Date();
 var time = d.getHours();
-if (time <= 18) {
+if (time <= 19) {
     document.getElementById("day").className = "day";
 }
 else {
