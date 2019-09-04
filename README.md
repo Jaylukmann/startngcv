@@ -8,4 +8,4 @@ The following validations were done:
 1. The name must not be less than 4 characters
 2. The email must be in the correct format. (Checks were made to detect if either the "@" or "." Symbol is missing so the appropriate error message can be given).
 3. The message must not be less than 20 characters.
-4. It is programmed to automatically choose between daylight and night mode display.
+4. It is programmed to automatically choose between daylight and night mode display. (Day light mode is from morning to 7pm while night mode starts from 7pm).
