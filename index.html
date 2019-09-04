@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kazeem's CV HTML Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+    <div class="page-wrapper">
+        <aside>
+            <!-- Profile Image here -->
+            <figure>
+                    <img src="https://res.cloudinary.com/asifatkazeem/image/upload/v1566530826/bn4vhaq11wh8ezk4atns.jpg" class="profile-image">
+            </figure>
+
+            <!-- Contact details -->
+            <div class="contact-div">
+                <h4>CONTACT DETAILS</h4>
+                Plot 2, Road K, 7th Avenue, Rofo Estate, Odogunyan, Ikorodu, Lagos State.<br>
+                08139248444<br>
+                <a href="mailto:asifatkazeem@yahoo.com">asifatkazeem@yahoo.com</a>
+                    
+            </div>
+
+            <!-- Skills meter here -->
+            <div class="key-skills-div">
+                <h4>KEY SKILLS</h4>
+                <ul class="key-skills-list">
+                    <li>
+                        HTML 5
+                        <div class="meter one"></div>
+                    </li>
+                    <li>
+                        CSS 3
+                        <div class="meter two"></div>
+                    </li>
+                    <li>
+                        Javascript
+                        <div class="meter three"></div>
+                    </li>
+                    <li>
+                        PHP
+                        <div class="meter four"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- personal skills -->
+            <div class="personal-skills-div">
+                <h4>PERSONAL SKILLS</h4>
+                <ul class="personal-skills-list bullet-list">
+                    <li>Handling criticism well and learning from it</li>
+                    <li>A keen approach to learning</li>
+                    <li>Able to work in a multi-disciplined team that includes designers, developers, consultants and project managers</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section>
+            <h1>Kazeem Asifat A.</h1>
+            <h3>Backend Developer</h3>
+            <p>
+                    An energetic and innovative young developer who is able to work alongside other talented IT 
+                    professionals in creating websites to the very highest standards. Kazeem has a high awareness
+                    of industry issues and trends, particularly in regard to accessibility, usability, and emerging technologies <br><br>
+                    Right now, Kazeem is looking for an entry level position in an organisation that needs his service.
+            </p>
+
+            <!-- qualifications here -->
+            <div class="qualifications margin-top">
+                <h4>ACADEMIC QUALIFICATIONS</h4>
+                <p>
+                    <strong>Federal University of Agriculture, Abeokuta</strong><br>
+                    Bachelor of Agriculture (In view).
+                    <span class="year">2014 - 2019</span>
+                </p>
+            </div>
+
+            <!-- experience here -->
+            <div class="experience margin-top">
+                <h4>EXPERIENCE</h4>
+                <ul class="bullet-list">
+                    <li>
+                        <strong>Computer Science Teacher and School Typist</strong><br>
+                        SIAM FOUNDATION COLLEGE<br>
+                        Odogunyan, Ikorodu, Lagos State.<br>
+                        September 2015 - January 2016.
+                    </li>
+                    <li>
+                        <strong>Diploma in Computer Science</strong><br>
+						Computer Appreciation and Basic Systems Engineering<br>
+						DE APEX COMPUTER SYSTEMS<br>
+						Odogunyan, Ikorodu, Lagos State.<br>
+                        23rd August, 2015.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- achievements here -->
+            <div class="selected-achievement margin-top">
+                <h4>SELECTED ACHIEVEMENTS</h4>
+                <ul class="bullet-list">
+                    <li>
+                        Udemy Certificate of Completion of<br>
+                        20 hours of Foundation of Front end <br> 
+                        web development course. <br>
+                        Ceificate URL: ude.my/UC-FDJZOU5A
+                    </li>
+                </ul>
+            </div>
+
+            <div class="floating-btn">
+                <button class="btn" id="contactButton"><span>Contact Me </span></button>
+            </div>
+
+            <!-- The Form Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">Close (x)</span>
+              <div class="modal-content" id="contact-form">
+                <h3 class="modal-heading">Shoot me a mail, i reply as fast as me.</h3>
+                <form autocomplete="on" id="myModalForm">
+                    <div class="control">
+                        <input type="text" name="" placeholder="Name" class="form" id="username">
+                        <p class="error" id="errorName">Please enter at least 4 characters in the name field!</p>
+                    </div>
+                    <div class="control">
+                        <input type="text" name="" placeholder="Email" class="form" id="email">
+                        <p class="error" id="errorEmail"></p>
+                    </div>
+                    <div class="control">
+                        <input type="text" name="" placeholder="Title" class="form" id="title">
+                    </div>
+                    <div class="control">
+                        <textarea class="form" id="message">Message</textarea>
+                        <p class="error" id="errorMessage">Your message must contain at least 20 characters.</p>
+                    </div>
+                    <div class="control">
+                        <button class="btn" id="submitButton">Send Message</button>
+                    </div>
+                </form>
+
+              </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

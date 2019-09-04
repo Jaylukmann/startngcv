@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.5em;
+}
+
+body {
+    background-color: #031724;
+    color: #fff;
+}
+
+h1 {
+    color: #1c87c9;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 23px;
+    color: #d12767;
+}
+
+.modal-heading {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+section, aside, figure {
+    display: block;
+}
+
+.page-wrapper {
+    padding: 40px 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+aside {
+    width: 30%;
+}
+
+figure {
+    
+}
+
+figure > img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+h4 {
+    margin-top: 30px;
+    color: #1c87c9;
+}
+
+ul.key-skills-list {
+    list-style-type: none;
+}
+
+li {
+    padding-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #d12767;
+}
+
+span {
+    margin-left: 50px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+aside, section {
+    width: 100%;
+    display: block;
+    float: none;
+}
+
+.floating-btn {
+    position: fixed;
+    right: 2%;
+    bottom: 7%;
+    z-index: 5;
+}
+
+.floating-btn button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 20px 20px 0px;
+    width: 200px;
+    transition: all 0.5s;
+    margin: 5px 5px 5px 0px;
+    vertical-align: middle;
+}
+
+.floating-btn button:active {
+    border: none;
+}
+
+.floating-btn button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.floating-btn button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.floating-btn button:hover span {
+  padding-right: 25px;
+}
+
+.floating-btn button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 20; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.95); 
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Add Animation */
+.modal-content {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+/*================================== The Close Button =============================*/
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #d12767;
+    font-size: 28px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-family: 'Arial Rounded', sans-serif;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ==================== Responsiveness ===================*/
+
+/* Tablets*/
+@media only screen and (min-width: 600px) {
+    .page-wrapper {
+        padding: 40px 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    aside {
+        width: 100% !important;
+        padding-left: 30px;
+    }
+
+    aside, section {
+        float: left;
+        margin: 40px auto 40px auto !important;
+    }   
+
+    section {
+        width: 100% !important;
+        padding-left: 30px !important;
+    }
+
+    .floating-btn {
+        position: fixed;
+        right: 7%;
+        bottom: 10%;
+        z-index: 5;
+    } 
+}
+
+/*Laptops and Desktops*/
+
+@media only screen and (min-width: 1000px) {
+    .page-wrapper {
+        padding: 40px 120px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    aside {
+        width: 30% !important;
+        padding-bottom: 40px;
+    }
+
+    aside, section {
+        float: left;
+    }   
+
+    section {
+        width: 60% !important;
+        margin-left: 80px;
+        padding-bottom: 40px;
+    }
+
+    .floating-btn {
+        position: fixed;
+        right: 7%;
+        bottom: 10%;
+        z-index: 5;
+    } 
+}
+
+/* ===================== Skills meter style ======================= */
+.meter {
+	height: 4px;
+	width: 15%;
+	background-color: #d12767;
+	padding: 10px;
+	display: block;
+}
+
+.one {
+	width: 100%;
+}
+
+.two {
+	width: 95%;
+}
+
+.three {
+	width: 80%;
+}
+
+.four {
+	width: 90%;
+}
+
+/*======================= Form ===============================*/
+.control {
+    margin-bottom: 25px;
+}
+.form, .input-error {
+    background-color: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    color: #565656;
+    padding: 8px 12px;
+    height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition: all 300ms linear;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+.form:focus, .input-error:focus {
+    background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 !important;
+    color: #333333;
+}
+textarea.form, textarea.textarea-error {
+    height: 200px;
+    width: 100%;
+    resize: none;
+    overflow: auto;
+    padding: 7px;
+}
+button {
+    overflow: visible;
+}
+.btn {
+    display: inline-block;
+    background-color: #d12767;
+    color: #FFFFFF;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    touch-action: manipulation;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+/* ====================== Validation ==============================*/
+
+#errorName, #errorEmail, #errorMessage {
+    display: none;
+    color: red;
+    font-size: 18px;
+}
+
+#errorEmail {
+    display: block;
+}
+
+.input-error, .textarea-error {
+    border: 3px solid red;
+}
