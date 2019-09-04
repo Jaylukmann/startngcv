@@ -6,7 +6,11 @@
     line-height: 1.5em;
 }
 
-body {
+.day {
+    background-color: #fff;
+}
+
+.night {
     background-color: #031724;
     color: #fff;
 }
