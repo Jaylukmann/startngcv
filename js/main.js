@@ -1,3 +1,14 @@
+// ========================= Theme shift ========================
+var d = new Date();
+var time = d.getHours();
+if (time <= 18) {
+    document.getElementById("day").className = "day";
+}
+else {
+    document.getElementById("day").className = "night";
+} 
+
+
 // ================================== Validation =============================================
 var username = document.getElementById("username");
 var email = document.getElementById("email");
