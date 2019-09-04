@@ -8,11 +8,17 @@
 
 .day {
     background-color: #fff;
+    padding: 40px 40px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .night {
     background-color: #031724;
     color: #fff;
+    padding: 40px 40px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h1 {
