@@ -123,18 +123,18 @@
                 <h3 class="modal-heading">Shoot me a mail, i reply as fast as me.</h3>
                 <form autocomplete="on" id="myModalForm">
                     <div class="control">
-                        <input type="text" name="" placeholder="Name" class="form" id="username">
+                        <input type="text" name="name" placeholder="Name" class="form" id="username" required>
                         <p class="error" id="errorName">Please enter at least 4 characters in the name field!</p>
                     </div>
                     <div class="control">
-                        <input type="text" name="" placeholder="Email" class="form" id="email">
+                        <input type="text" name="email" placeholder="Email" class="form" id="email" required>
                         <p class="error" id="errorEmail"></p>
                     </div>
                     <div class="control">
-                        <input type="text" name="" placeholder="Title" class="form" id="title">
+                        <input type="text" name="title" placeholder="Title" class="form" id="title" required>
                     </div>
                     <div class="control">
-                        <textarea class="form" id="message">Message</textarea>
+                        <textarea name="message" class="form" id="message" required>Message</textarea>
                         <p class="error" id="errorMessage">Your message must contain at least 20 characters.</p>
                     </div>
                     <div class="control">
