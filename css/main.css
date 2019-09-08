@@ -8,6 +8,7 @@
 
 .day {
     background-color: #fff;
+    color: #111;
     padding: 40px 40px;
     margin-right: auto;
     margin-left: auto;
@@ -93,6 +94,13 @@ aside, section {
     float: none;
 }
 
+.eachMessage {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
 .floating-btn {
     position: fixed;
     right: 2%;
@@ -113,6 +121,17 @@ aside, section {
     transition: all 0.5s;
     margin: 5px 5px 5px 0px;
     vertical-align: middle;
+}
+
+a > .php-button {
+    display: block;
+    background-color: #f4511e !important;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.margin-bottom {
+    display: inline;
 }
 
 .floating-btn button:active {
@@ -213,6 +232,22 @@ aside, section {
         margin-left: auto;
     }
 
+    .day {
+        background-color: #fff;
+        color: #111;
+        padding: 40px 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .night {
+        background-color: #031724;
+        color: #fff;
+        padding: 40px 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     aside {
         width: 100% !important;
         padding-left: 30px;
@@ -239,6 +274,22 @@ aside, section {
 /*Laptops and Desktops*/
 
 @media only screen and (min-width: 1000px) {
+    .day {
+        background-color: #fff;
+        color: #111;
+        padding: 40px 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .night {
+        background-color: #031724;
+        color: #fff;
+        padding: 40px 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .page-wrapper {
         padding: 40px 120px;
         margin-right: auto;
@@ -330,6 +381,32 @@ textarea.form, textarea.textarea-error {
 button {
     overflow: visible;
 }
+
+.new-btn {
+    display: inline-block;
+    background-color: #d12767;
+    color: #FFFFFF;
+    padding: 6px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    touch-action: manipulation;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
 .btn {
     display: inline-block;
     background-color: #d12767;

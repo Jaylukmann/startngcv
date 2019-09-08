@@ -1,0 +1,2 @@
+
+					<p class='eachMessage'><b>Name:</b> Asifat Kazeem<br><b>Email:</b> asifatkazeem@yahoo.com<br><b>Title:</b> Testing<br><b>Message:</b> Hello Kazeem, just testing your contact message.</p>
