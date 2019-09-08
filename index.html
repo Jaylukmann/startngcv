@@ -3,12 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kazeem's CV HTML Page</title>
+    <title>Welcome to Kazeem Asifat's CV page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Kazeem's cv made with html, css and javascript. Javascript was used in this CV to display the contact form inside a modal box by clicking on the 'Contact me' button. It was used for the form validations as well.
-The validation was programmed in such a way that if the required parameters of a field is not filled, all other input fields as well as the submit button will be disabled until the error has been corrected. 
-It is also programmed to automatically choose between daylight and night mode display. (Day light mode is from morning to 7pm while night mode starts from 7pm).">
     <meta name="theme-color" content="#031724">
+    <meta name="keyword" content="Kazeem Asifat's CV, Kazeem's Resume, Kazeem Asifat HNG, Kazeem Asifat HNG Internship, kazeem github, kazeem asifat adeniyi">
+    <meta name="description" content="This CV was created during HNG Internship program. Javascript was used in this CV to display the contact form inside a modal box by clicking on the 'Contact me' button. It was used for the form validations as well. The validation was programmed in such a way that if the required parameters of a field is not filled, all other input fields as well as the submit button will be disabled until the error has been corrected. The CV page is also programmed to automatically choose between daylight and night mode display. (Day light mode is from morning to 7pm while night mode starts from 7pm).">
+
+    <!-- Social media -->
+    <meta property="og:title" content="Welcome to Kazeem Asifat's CV page">  
+    <meta property="og:url" content="http://kazeeem.github.io/startngcv">
+    <meta property="og:description" content="This CV was created during HNG Internship program. Javascript was used in this CV to display the contact form inside a modal box by clicking on the 'Contact me' button. It was used for the form validations as well. The validation was programmed in such a way that if the required parameters of a field is not filled, all other input fields as well as the submit button will be disabled until the error has been corrected. The CV page is also programmed to automatically choose between daylight and night mode display. (Day light mode is from morning to 7pm while night mode starts from 7pm).">    
+    <meta property="og:image" content="https://res.cloudinary.com/asifatkazeem/image/upload/v1566530826/bn4vhaq11wh8ezk4atns.jpg">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="200">
+    <meta property="og:image:alt" content="Kazeem-asifat">
+    <meta property="og:type" content="website">
+
+    <!-- style -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 <body>
@@ -16,7 +27,7 @@ It is also programmed to automatically choose between daylight and night mode di
         <aside>
             <!-- Profile Image here -->
             <figure>
-                    <img src="https://res.cloudinary.com/asifatkazeem/image/upload/v1566530826/bn4vhaq11wh8ezk4atns.jpg" class="profile-image">
+                    <img src="https://res.cloudinary.com/asifatkazeem/image/upload/v1566530826/bn4vhaq11wh8ezk4atns.jpg" class="profile-image" alt="Kazeem-asifat-cv-image" title="kazeem-asifat-image">
             </figure>
 
             <!-- Contact details -->
@@ -124,7 +135,7 @@ It is also programmed to automatically choose between daylight and night mode di
               <span class="close">Close (x)</span>
               <div class="modal-content" id="contact-form">
                 <h3 class="modal-heading">Shoot me a mail, i reply as fast as me.</h3>
-                <form autocomplete="on" id="myModalForm">
+                <form autocomplete="on" id="myModalForm" action="process-form.php" method="post">
                     <div class="control">
                         <input type="text" name="name" placeholder="Name" class="form" id="username" required>
                         <p class="error" id="errorName">Please enter at least 4 characters in the name field!</p>
@@ -137,11 +148,11 @@ It is also programmed to automatically choose between daylight and night mode di
                         <input type="text" name="title" placeholder="Title" class="form" id="title" required>
                     </div>
                     <div class="control">
-                        <textarea name="message" class="form" id="message" required>Message</textarea>
+                        <textarea class="form" name="message" id="message" required>Message</textarea>
                         <p class="error" id="errorMessage">Your message must contain at least 20 characters.</p>
                     </div>
                     <div class="control">
-                        <button class="btn" id="submitButton">Send Message</button>
+                        <button class="btn" name="submit" id="submitButton">Send Message</button>
                     </div>
                 </form>
 
